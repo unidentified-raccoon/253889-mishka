@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Yana Denisenko](https://up.htmlacademy.ru/adaptive/11/user/253889).
-* Наставник: `Неизвестно`.
+* Наставник: [Cергей Рубец](https://htmlacademy.ru/profile/id41580).
 
 ---
 
