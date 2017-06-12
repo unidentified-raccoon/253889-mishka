@@ -1,21 +1,26 @@
 .social {
-  margin: 0 auto;
-  margin-top: 39px;
-  padding: 0 30px;
-  background-color: @color-grey-light2;
-  outline: 1px solid violet;
+    padding: 0 30px;
+    padding-top: 7px;
+    padding-bottom: 11px;
 }
 
-.social__links {
-  margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  list-style: none;
-  outline: 1px solid green;
+@media @tablet-widths {
+  .social {
+    flex-basis: 150px;
+    padding: 0;
+    margin-right: 80px;
+  }
 }
 
-.social__link {
-  display: inline-block;
-  text-align: top;
-  height: 30px; /*temporary*/
+@media @desktop-widths {
+  .social {
+    margin-right: 270px;
+  }
 }
+
+ .social__links {
+    display: flex;
+    list-style: none;
+    min-height: 29px; /*temporary*/
+    outline: 1px solid red;
+ }

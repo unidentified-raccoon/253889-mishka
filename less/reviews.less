@@ -4,6 +4,27 @@
   outline: 1px solid grey;
 }
 
+@media @tablet-widths {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    padding: 0 50px;
+    padding-top: 78px;
+    padding-bottom: 43px;
+    margin-bottom: 70px;
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    padding: 0 75px;
+    padding-top: 70px;
+    padding-bottom: 95px;
+  }
+}
+
 .reviews__title {
   padding: 0;
   margin-bottom: 25px;
@@ -13,8 +34,43 @@
   color: @color-black;
 }
 
+@media @tablet-widths {
+  .reviews__title {
+    margin: 0;
+    margin-bottom: 30px;
+    margin-right: 307px;
+    font-size: 43px;
+    line-height: 50px;
+    order: 1;
+    outline: 1px solid red;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 170px;
+    margin-right: 477px;
+  }
+}
+
 .reviews__item {
   margin-bottom: 32px;
+}
+
+@media @tablet-widths {
+  .reviews__item {
+    order: 3;
+    margin: 0;
+    outline: 1px solid green;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__item {
+    margin-left: 172px;
+  }
 }
 
 .reviews__text-review {
@@ -24,11 +80,30 @@
   color: @color-grey;
 }
 
+@media @tablet-widths {
+  .reviews__text-review {
+    margin-bottom: 57px;
+    font-size: 17px;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__text-review {
+    margin-bottom: 35px;
+  }
+}
+
 .reviews__author-name {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: @color-black;
+}
+
+@media @tablet-widths {
+  .reviews__author-name {
+    margin-bottom: 4px;
+  }
 }
 
 .reviews__author-email {
@@ -43,6 +118,26 @@
   width: 100%;
   font-size: 0;
   outline: 1px solid blue;
+}
+
+@media @tablet-widths {
+  .reviews__controls {
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    bottom: 43px;
+    right: 50px;
+    width: 176px;
+    height: 54px;
+    order: 4;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__controls {
+    right: 75px;
+    bottom: 95px;
+  }
 }
 
 .reviews__prev {
@@ -64,4 +159,19 @@
 
 .reviews__write {
   width: 260px;
+}
+
+@media @tablet-widths {
+  .reviews__write {
+    margin: 0;
+    margin-bottom: 30px;
+    order: 2;
+    width: 174px;
+  }
+}
+
+@media @desktop-widths {
+  .reviews__write {
+    margin-top: 10px;
+  }
 }

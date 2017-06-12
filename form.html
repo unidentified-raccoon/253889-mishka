@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mishka - Вязание на заказ</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,58 +32,64 @@
         <p class="order-form_description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__field-type order-form__field">
           <legend class="order-form__fieldset-name">Тип</legend>
-          <label class="order-form__label-radio">
-            <input type="radio" name="type" value="interior">
-            <span class="radiobtn-indicator"></span>
-            Аксессуар для интерьера
-          </label>
-          <label class="order-form__label-radio">
-            <input type="radio" name="type" value="toy">
-            <span class="radiobtn-indicator"></span>
-            Детская игрушка
-          </label>
+          <div class="order-form__options order-form__options--type">
+            <label class="order-form__label-radio">
+              <input type="radio" name="type" value="interior">
+              <span class="radiobtn-indicator"></span>
+              Аксессуар для интерьера
+            </label>
+            <label class="order-form__label-radio">
+              <input type="radio" name="type" value="toy">
+              <span class="radiobtn-indicator"></span>
+              Детская игрушка
+            </label>
+          </div>
         </fieldset>
         <fieldset class="order-form__field-color order-form__field">
           <legend class="order-form__fieldset-name">Цвет</legend>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="white">
-            <span class="checkbox-indicator"></span>
-            Белый
-          </label>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="grey">
-            <span class="checkbox-indicator"></span>
-            Серый
-          </label>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="tiffany">
-            <span class="checkbox-indicator"></span>
-            &#171;Тиффани&#187;
-          </label>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="black">
-            <span class="checkbox-indicator"></span>
-            Черный
-          </label>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="pink">
-            <span class="checkbox-indicator"></span>
-            Розовый
-          </label>
-          <label class="order-form__label-checkbox">
-            <input type="checkbox" name="color" value="orange">
-            <span class="checkbox-indicator"></span>
-            Оранжевый
-          </label>
+          <div class="order-form__options order-form__options--color">
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="white">
+              <span class="checkbox-indicator"></span>
+              Белый
+            </label>
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="grey">
+              <span class="checkbox-indicator"></span>
+              Серый
+            </label>
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="tiffany">
+              <span class="checkbox-indicator"></span>
+              &#171;Тиффани&#187;
+            </label>
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="black">
+              <span class="checkbox-indicator"></span>
+              Черный
+            </label>
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="pink">
+              <span class="checkbox-indicator"></span>
+             Розовый
+            </label>
+            <label class="order-form__label-checkbox order-form__label-checkbox--color">
+              <input type="checkbox" name="color" value="orange">
+              <span class="checkbox-indicator"></span>
+              Оранжевый
+            </label>
+          </div>
         </fieldset>
         <fieldset class="order-form__field-name order-form__field">
           <legend class="order-form__fieldset-name">ФИО</legend>
-          Имя:
-          <input type="text" name="firstname" value="Введите ваше имя*">
-          Фамилия:
-          <input type="text" name="lastname" value="Укажите фамилию*">
-          Отчество:
-          <input type="text" name="middlename" value="Отчество, если желаете">
+          <div class="order-form__options order-form__options--name">
+            Имя:
+            <input type="text" name="firstname" value="Введите ваше имя*">
+            Фамилия:
+            <input type="text" name="lastname" value="Укажите фамилию*">
+            Отчество:
+            <input type="text" name="middlename" value="Отчество, если желаете">
+          </div>
         </fieldset>
         <fieldset class="order-form__field-phone order-form__field">
           <legend class="order-form__fieldset-name">Тел</legend>
@@ -101,6 +108,9 @@
       </form>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo" title="mishka">
+        <img src="http://placehold.it/102x34" alt="Mishka logo" height="34" width="102">
+      </a>
       <section class="social">
         <h2 class="text-hidden">Мы в соцсетях</h2>
         <ul class="social__links">

@@ -4,10 +4,34 @@
   background-color: rgb(255, 255, 255);
 }
 
+@media @tablet-widths {
+  .page-header {
+    padding: 0 50px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    padding: 0 50px
+  }
+}
+
 .page-header__logo {
   display: block;
   height: 35px;
   width: 86px;
   margin: 0 auto;
   padding: 22px 0;
+}
+
+@media @tablet-widths {
+  .page-header__logo {
+    padding: 27px 0; /*temporarily*/
+  }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    padding: 27px 0; /*temporarily*/
+  }
 }

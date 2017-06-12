@@ -4,12 +4,27 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
+@media @tablet-widths {
+  .form-page {
+    width: 768px;
+    padding: 0 50px;
+  }
+}
+
 .form-page__hero {
   margin-bottom: 23px;
   padding-top: 72px;
   padding-bottom: 75px;
   background-color: @color-grey-light2;
   outline: 1px solid green;
+}
+
+@media @tablet-widths {
+  .form-page__hero {
+    margin-bottom: 74px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+  }
 }
 
 .form-page__hero-text {
@@ -19,4 +34,11 @@
   line-height: 30px;
   font-weight: 700;
   color: @color-black;
+}
+
+@media @tablet-widths {
+  .form-page__hero-text {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

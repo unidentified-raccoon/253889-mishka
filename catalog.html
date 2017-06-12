@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mishka - Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -27,40 +28,53 @@
       <section class="catalog-page__hero">
         <h2 class="catalog-page__hero-text">Каталог товаров</h2>
       </section>
-      <article class="catalog-item">
-        <div class="catalog-item__picture"><img src="img/photo-1-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
-        <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
-        <div class="catalog-item__properties">Рост 30 см, вес 200 г</div>
-        <div class="catalog-item__price">1 200 руб.</div>
-        <a class="catalog-item__buy text-hidden">Купить</a>
-      </article>
-      <article class="catalog-item">
-        <div class="catalog-item__picture"><img src="img/photo-2-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
-        <h3 class="catalog-item__title">Корзинка для белья</h3>
-        <div class="catalog-item__properties">Диаметр 15 см, высота 10 см</div>
-        <div class="catalog-item__price">690 руб.</div>
-        <a class="catalog-item__buy text-hidden">Купить</a>
-      </article>
-      <article class="catalog-item">
-        <div class="catalog-item__picture"><img src="img/photo-3-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
-        <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
-        <div class="catalog-item__properties">Диаметр 30 см, высота 30 см</div>
-        <div class="catalog-item__price">1 500 руб.</div>
-        <a class="catalog-item__buy text-hidden">Купить</a>
-      </article>
+      <div class="catalog-items">
+        <article class="catalog-item">
+          <div class="catalog-item__picture"><img src="img/photo-1-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
+          <div class="catalog-item__description">
+            <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+            <div class="catalog-item__properties">Рост 30 см, вес 200 г</div>
+            <div class="catalog-item__price">1 200 руб.</div>
+            <a class="catalog-item__buy text-hidden">Купить</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__picture"><img src="img/photo-2-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
+          <div class="catalog-item__description">
+            <h3 class="catalog-item__title">Корзинка для белья</h3>
+            <div class="catalog-item__properties">Диаметр 15 см, высота 10 см</div>
+            <div class="catalog-item__price">690 руб.</div>
+            <a class="catalog-item__buy text-hidden">Купить</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__picture"><img src="img/photo-3-mobile@1x.jpg" height="195" width="260" alt="Изображение товара"></div>
+          <div class="catalog-item__description">
+            <h3 class="catalog-item__title catalog-item__title--narrow">Большая корзинка для игрушек</h3>
+            <div class="catalog-item__properties catalog-item__properties--high">Диаметр 30 см, высота 30 см</div>
+            <div class="catalog-item__price">1 500 руб.</div>
+            <a class="catalog-item__buy text-hidden">Купить</a>
+          </div>
+        </article>
+      </div>
       <section class="promo-video">
-        <h2 class="promo-video__title">Процесс производства</h2>
         <video class="promo-video__video" height="150" width="260" controls poster="img/video-mobile@1x.jpg">
           <source src="video.mp4" type="video/mp4">
           <source src="video.ogv" type="video/ogg">
           <source src="video.webm" type="video/webm">
           Ваш браузер не поддерживает видео
         </video>
-        <p class="promo-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn promo-video__purchase-btn">Сделать заказ</a>
+        <div class="promo-video__description">
+          <h2 class="promo-video__title">Процесс производства</h2>
+          <p class="promo-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn promo-video__purchase-btn">Сделать заказ</a>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--catalog-page">
+      <a class="page-footer__logo" title="mishka">
+        <img src="http://placehold.it/102x34" alt="Mishka logo" height="34" width="102">
+      </a>
       <section class="social">
         <h2 class="text-hidden">Мы в соцсетях</h2>
         <ul class="social__links">

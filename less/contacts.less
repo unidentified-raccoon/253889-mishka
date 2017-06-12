@@ -1,7 +1,7 @@
 .contacts {
-  padding: 0 30px;
-  padding-bottom: 10px;
+  padding-top: 30px;
   margin: 0;
+  margin-bottom: 40px;
   min-height: 305px; /*temporary*/
   font-size: 15px;
   line-height: 30px;
@@ -9,24 +9,147 @@
   outline: 1px solid black;
 }
 
+@media @tablet-widths {
+  .contacts {
+    padding-top: 45px;
+    min-height: 280px; /*temporary*/
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    position: relative;
+    display: flex;
+    padding: 0 50px;
+    padding-top: 100px;
+    margin-bottom: 105px;
+    font-size: 17px;
+    line-height: 30px;
+    min-height: 300px; /*temporary*/
+  }
+}
+
+.contacts__info {
+  padding: 0 30px;
+  margin-bottom: 40px;
+  outline: 1px solid red;
+}
+
+@media @tablet-widths {
+  .contacts__info {
+    padding: 0 50px;
+    margin-bottom: 56px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__info {
+    padding-top: 25px;
+    padding-left: 215px;
+    padding-right: 20px;
+    width: 335px;
+  }
+}
 .contacts__title {
   padding: 0;
-  padding-top: 44px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: @color-black;
 }
 
+@media @tablet-widths {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 47px;
+  }
+}
+
+.contacts__email {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+  margin-right: 27px;
+  outline: 1px solid red;
+}
+
+.contacts__email-link {
+  outline: 1px solid red;
+}
+
+.contacts__address {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 27px;
+  outline: 1px solid red;
+}
+
+.contacts__address-full {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  width: 150px;
+  outline: 1px solid red;
+}
+
+@media @tablet-widths {
+  .contacts__address-full {
+    width: 225px;
+  }
+}
+
 .contacts__map {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
+  width: 320px;
   height: 457px;
   outline: 1px solid purple;
   background: url('../img/map-mobile@1x.jpg') no-repeat;
   background-position: center;
 }
 
+@media @tablet-widths {
+  .contacts__map {
+    margin-bottom: 57px;
+    width: 768px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__map {
+    width: 525px;
+    margin: 0;
+  }
+}
+
 .contacts__contact-us {
   width: 260px;
   text-decoration: none;
+}
+
+@media @tablet-widths {
+  .contacts__contact-us {
+    width: 230px;
+    margin-bottom: 60px;
+  }
+}
+
+@media @desktop-widths {
+  .contacts__contact-us {
+    position: absolute;
+    bottom: 0;
+    left: 270px;
+    margin: 0;
+  }
 }
