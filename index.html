@@ -12,25 +12,27 @@
       <a class="page-header__logo" title="mishka">
         <img src="img/logo-mobile.svg" alt="Mishka logo" height="35" width="86">
       </a>
-      <!-- <nav class="main-nav__list">
-        <a class="main-nav__item  main-nav__item--active" href="#">Главная</a>
-        <a class="main-nav__item" href="#">Каталог товаров</a>
-        <a class="main-nav__item" href="#">Вязание на заказ</a>
-        <a class="main-nav__item" href="#">Новые поступления</a>
-        <a class="main-nav__item" href="#">Распродажа</a>
+      <nav class="main-nav__list">
+        <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
+        <a class="main-nav__item main-nav__item--big" href="form.html">Вязание на заказ</a>
+      </nav>
+      <nav class="main-nav__desktop">
+        <a class="main-nav__desktop-item" href="#">Новые поступления</a>
+        <a class="main-nav__desktop-item main-nav__desktop-item--big" href="#">Распродажа</a>
       </nav>
       <ul class="main-nav__user-items">
-        <li class="main-nav__item"><a href="#">Поиск</a></li>
-        <li class="main-nav__item"><a href="#">Корзина</a></li>
-      </ul> -->
+        <li><a class="main-nav__user-item main-nav__user-item--textzero" href="#">Поиск по сайту</a></li>
+        <li><a class="main-nav__user-item" href="#">Корзина: пока пуста</a></li>
+      </ul>
+      <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
     </header>
     <main class="main-content">
       <section class="main-content__hero">
         <h2 class="main-content__hero-text">Милые штуки ручной работы для дома</h2>
       </section>
       <section class="main-content__catalog-groups">
-        <div class="main-content__catalog-group main-content__catalog-group--things"><a class="main-content__catalog-group-link" href="#">Предметы интерьера</a></div>
-        <div class="main-content__catalog-group main-content__catalog-group--toys"><a class="main-content__catalog-group-link" href="#">Детские игрушки</a></div>
+        <div class="main-content__catalog-group main-content__catalog-group--things"><a class="main-content__catalog-group-link" href="catalog.html/interior">Предметы интерьера</a></div>
+        <div class="main-content__catalog-group main-content__catalog-group--toys"><a class="main-content__catalog-group-link" href="catalog.html/toys">Детские игрушки</a></div>
       </section>
       <article class="promo-item">
         <div class="promo-item__header">
@@ -54,7 +56,7 @@
         </table>
         <img class="promo-item__image" src="img/triple-set-mobile@1x.jpg" height="315" width="260" alt="Фото товара">
         <div class="promo-item__price">Цена: 990 руб.</div>
-        <a class="btn promo-item__purchase-btn">Заказать</a>
+        <a class="btn promo-item__purchase-btn" href="#">Заказать</a>
       </article>
       <section class="advantages">
         <h2 class="text-hidden">Наши преимущества</h2>
@@ -79,17 +81,17 @@
           <a class="reviews__prev">Предыдущий отзыв</a>
           <a class="reviews__next">Следующий отзыв</a>
         </div>
-        <a class="btn  reviews__write">Написать</a>
+        <a class="btn  reviews__write" href="reviews.html">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__info">
           <h2 class="contacts__title">Контакты</h2>
           <span class="contacts__email">e-mail:</span><a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           <span class="contacts__address">адрес:</span>
-          <p class="contacts__address-full">г. Санкт-Петербург, ул. Большая Конюшенная, <br>д. 19/8, офис 101</p>
+          <p class="contacts__address-full">г. Санкт-Петербург,<br> ул. Большая Конюшенная, <br>д. 19/8, офис 101</p>
         </div>
         <div class="contacts__map"></div>
-        <a class="btn  contacts__contact-us" href="#">Напишите нам</a>
+        <a class="btn  contacts__contact-us" href="contacts.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">

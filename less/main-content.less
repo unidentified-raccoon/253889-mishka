@@ -9,6 +9,12 @@
   outline: 1px solid blue;
 }
 
+@media @tablet-widths {
+  .main-content__hero {
+    margin-top: -40px;
+  }
+}
+
 .main-content__hero-text {
   margin: 0 auto;
   width: 245px;
@@ -57,7 +63,7 @@
   .main-content__catalog-groups {
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     background-color: @color-grey-light4;
   }
 }
@@ -85,11 +91,12 @@
 
 .main-content__catalog-group-link {
   display: block;
+  box-sizing: border-box;
   padding-top: 24px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 160px;
-  width: 110px;
+  width: 100%;
   font-size: 19px;
   line-height: 24px;
   color: @color-white;

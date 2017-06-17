@@ -21,8 +21,8 @@
     position: relative;
     display: flex;
     padding: 0 50px;
-    padding-top: 100px;
-    margin-bottom: 105px;
+    padding-top: 140px;
+    margin-bottom: 60px;
     font-size: 17px;
     line-height: 30px;
     min-height: 300px; /*temporary*/
@@ -46,14 +46,16 @@
 
 @media @desktop-widths {
   .contacts__info {
+    margin-bottom: 0;
     padding-top: 25px;
-    padding-left: 215px;
+    padding-left: 175px;
     padding-right: 20px;
     width: 335px;
   }
 }
 .contacts__title {
   padding: 0;
+  margin: 0;
   margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
@@ -94,6 +96,12 @@
   vertical-align: top;
   margin-right: 27px;
   outline: 1px solid red;
+}
+
+@media @desktop-widths {
+  .contacts__address {
+    margin-right: 20px;
+  }
 }
 
 .contacts__address-full {
@@ -148,8 +156,8 @@
 @media @desktop-widths {
   .contacts__contact-us {
     position: absolute;
-    bottom: 0;
-    left: 270px;
+    bottom: 50px;;
+    left: 225px;
     margin: 0;
   }
 }

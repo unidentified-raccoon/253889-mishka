@@ -9,20 +9,22 @@
   <body class="catalog-page">
     <header class="page-header">
       <h1 class="text-hidden">Мишка-каталог товаров</h1>
-      <a class="page-header__logo" title="mishka">
+      <a class="page-header__logo" title="mishka" href="index.html">
         <img src="img/logo-mobile.svg" alt="Mishka logo" height="35" width="86">
       </a>
-      <!-- <nav class="main-nav__list">
-        <a class="main-nav__item" href="#">Главная</a>
-        <a class="main-nav__item main-nav__item--active" href="#">Каталог товаров</a>
-        <a class="main-nav__item" href="#">Вязание на заказ</a>
-        <a class="main-nav__item" href="#">Новые поступления</a>
-        <a class="main-nav__item" href="#">Распродажа</a>
+      <nav class="main-nav__list">
+        <a class="main-nav__item">Каталог товаров</a>
+        <a class="main-nav__item main-nav__item--big" href="form.html">Вязание на заказ</a>
+      </nav>
+      <nav class="main-nav__desktop">
+        <a class="main-nav__desktop-item" href="#">Новые поступления</a>
+        <a class="main-nav__desktop-item main-nav__desktop-item--big" href="#">Распродажа</a>
       </nav>
       <ul class="main-nav__user-items">
-        <li class="main-nav__item"><a href="#">Поиск</a></li>
-        <li class="main-nav__item"><a href="#">Корзина</a></li>
-      </ul> -->
+        <li><a class="main-nav__user-item main-nav__user-item--textzero" href="#">Поиск по сайту</a></li>
+        <li><a class="main-nav__user-item" href="#">Корзина: пока пуста</a></li>
+      </ul>
+      <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
     </header>
     <main>
       <section class="catalog-page__hero">
@@ -35,7 +37,7 @@
             <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
             <div class="catalog-item__properties">Рост 30 см, вес 200 г</div>
             <div class="catalog-item__price">1 200 руб.</div>
-            <a class="catalog-item__buy text-hidden">Купить</a>
+            <a class="catalog-item__buy text-hidden" href="#">Купить</a>
           </div>
         </article>
         <article class="catalog-item">
@@ -44,7 +46,7 @@
             <h3 class="catalog-item__title">Корзинка для белья</h3>
             <div class="catalog-item__properties">Диаметр 15 см, высота 10 см</div>
             <div class="catalog-item__price">690 руб.</div>
-            <a class="catalog-item__buy text-hidden">Купить</a>
+            <a class="catalog-item__buy text-hidden" href="#">Купить</a>
           </div>
         </article>
         <article class="catalog-item">
@@ -53,7 +55,7 @@
             <h3 class="catalog-item__title catalog-item__title--narrow">Большая корзинка для игрушек</h3>
             <div class="catalog-item__properties catalog-item__properties--high">Диаметр 30 см, высота 30 см</div>
             <div class="catalog-item__price">1 500 руб.</div>
-            <a class="catalog-item__buy text-hidden">Купить</a>
+            <a class="catalog-item__buy text-hidden" href="#">Купить</a>
           </div>
         </article>
       </div>
@@ -67,12 +69,12 @@
         <div class="promo-video__description">
           <h2 class="promo-video__title">Процесс производства</h2>
           <p class="promo-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="btn promo-video__purchase-btn">Сделать заказ</a>
+          <a class="btn promo-video__purchase-btn" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
     <footer class="page-footer page-footer--catalog-page">
-      <a class="page-footer__logo" title="mishka">
+      <a class="page-footer__logo" title="mishka" href="index.html">
         <img src="http://placehold.it/102x34" alt="Mishka logo" height="34" width="102">
       </a>
       <section class="social">
