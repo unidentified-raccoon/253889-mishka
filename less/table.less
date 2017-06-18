@@ -4,6 +4,23 @@
   outline: 1px solid red;
 }
 
+@media @tablet-widths {
+  .table {
+    width: 334px;
+    padding-right: 44px;
+    margin-bottom: 49px;
+  }
+}
+
+@media @desktop-widths {
+  .table {
+    width: 350px;
+    padding-right: 60px;
+    margin-left: 175px;
+    margin-bottom: 103px;
+  }
+}
+
 .table__row {
   font-size: 15px;
   line-height: 20px;
@@ -15,6 +32,12 @@
   padding-bottom: 13px;
   padding-right: 10px;
   border-bottom: 1px solid @color-grey-light;
+}
+
+@media @tablet-widths {
+  .table__row-title {
+    padding-right: 0;
+  }
 }
 
 .table__row-value {

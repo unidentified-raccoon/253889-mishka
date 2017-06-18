@@ -1,7 +1,18 @@
 .catalog-page {
   margin: 0 auto;
-  width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@media @tablet-widths {
+  .catalog-page {
+    width: auto;
+  }
+}
+
+@media @desktop-widths {
+  .catalog-page {
+    width: auto;
+  }
 }
 
 .catalog-page__hero {
@@ -12,6 +23,20 @@
   outline: 1px solid green;
 }
 
+@media @tablet-widths {
+  .catalog-page__hero {
+    padding-top: 95px;
+    margin-top: -40px;
+    margin-bottom: 84px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog-page__hero {
+    margin-bottom: 155px;
+  }
+}
+
 .catalog-page__hero-text {
   margin: 0;
   text-align: center;
@@ -19,4 +44,18 @@
   line-height: 30px;
   font-weight: 700;
   color: @color-black;
+}
+
+@media @tablet-widths {
+  .catalog-page__hero-text {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog-page__hero-text {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

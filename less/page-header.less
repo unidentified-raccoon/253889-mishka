@@ -1,7 +1,26 @@
 .page-header {
+  width: 320px;
   margin: 0 auto;
   outline: 1px solid green;
-  background-color: rgb(255, 255, 255);
+}
+
+@media @tablet-widths {
+  .page-header {
+    box-sizing: border-box;
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    width: 1150px;
+    position: relative;
+    padding: 0 50px;
+  }
 }
 
 .page-header__logo {
@@ -10,4 +29,21 @@
   width: 86px;
   margin: 0 auto;
   padding: 22px 0;
+}
+
+@media @tablet-widths {
+  .page-header__logo {
+    margin-left: 0;
+    padding-top: 27px; /*temporarily*/
+    order: 1;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    margin: 0 auto;
+    padding: 0;
+    height: 88px;
+    order: 2;
+  }
 }

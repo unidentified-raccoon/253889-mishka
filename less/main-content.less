@@ -3,10 +3,16 @@
 }
 
 .main-content__hero {
-  background: @color-white url("../img/hero-mobile@1x.jpg") no-repeat;
+  background: @color-grey-light4 url("../img/hero-mobile@1x.jpg") no-repeat;
   background-position: center;
   text-align: center;
   outline: 1px solid blue;
+}
+
+@media @tablet-widths {
+  .main-content__hero {
+    margin-top: -40px;
+  }
 }
 
 .main-content__hero-text {
@@ -20,8 +26,63 @@
   font-weight: 700;
 }
 
+@media @tablet-widths {
+  .main-content__hero-text {
+    width: 510px;
+    padding-top: 153px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media @desktop-widths {
+    .main-content__hero-text {
+    width: 620px;
+    padding-top: 153px;
+    padding-bottom: 360px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 .main-content__catalog-groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 29px;
+  background-color: @color-grey-light4;
+}
+
+@media @tablet-widths {
+  .main-content__catalog-groups {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+}
+
+@media @desktop-widths {
+  .main-content__catalog-groups {
+    margin-bottom: 100px;
+  }
+}
+
+.main-content__catalog-group {
+  box-sizing: border-box;
+  width: 320px;
+}
+
+@media @tablet-widths {
+  .main-content__catalog-group {
+    width: 334px;
+  }
+}
+
+@media @desktop-widths {
+  .main-content__catalog-group {
+    width: 525px;
+  }
 }
 
 .main-content__catalog-group--things {
@@ -33,15 +94,34 @@
 
 .main-content__catalog-group-link {
   display: block;
+  box-sizing: border-box;
   padding-top: 24px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 160px;
-  width: 110px;
+  width: 100%;
   font-size: 19px;
   line-height: 24px;
   color: @color-white;
   font-weight: 700;
   text-decoration: none;
   outline: 1px solid red;
+}
+
+@media @tablet-widths {
+  .main-content__catalog-group-link {
+  padding-top: 29px;
+  padding-left: 35px;
+  font-size: 20px;
+  line-height: 30px;
+  }
+}
+
+@media @desktop-widths {
+  .main-content__catalog-group-link {
+  padding-top: 29px;
+  padding-left: 35px;
+  font-size: 20px;
+  line-height: 30px;
+  }
 }
