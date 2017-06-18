@@ -1,4 +1,6 @@
 .promo-item {
+  box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
   margin-bottom: 71px;
   padding: 0 30px;
@@ -7,6 +9,7 @@
 
 @media @tablet-widths {
   .promo-item {
+    width: 768px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -17,6 +20,7 @@
 
 @media @desktop-widths {
   .promo-item {
+    width: 1150px;
     padding-top: 53px;
     margin-bottom: 73px;
   }
@@ -139,8 +143,11 @@
 
 @media @desktop-widths {
   .promo-item__image {
+    left: auto;
+    top: auto;
     right: 0;
     bottom: 0;
+    margin-bottom: 0;
   }
 }
 

@@ -1,11 +1,19 @@
 .page-footer {
+  background-color: @color-grey-light2;
+}
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   outline: 1px solid green;
 }
 
 @media @tablet-widths {
-  .page-footer {
+  .page-footer__wrapper {
+    width: 768px;
     flex-direction: row;
     align-items: center;
     padding: 0 50px;
@@ -15,7 +23,10 @@
 }
 
 @media @desktop-widths {
-  .page-footer--catalog-page {
+  .page-footer__wrapper {
+    width: 1150px;
+  }
+  .page-footer__wrapper--catalog-page {
     padding-left: 50px;
     padding-right: 50px;
   }

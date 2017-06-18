@@ -1,6 +1,8 @@
 .contacts {
+  box-sizing: border-box;
+  width: 320px;
   padding-top: 30px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
   min-height: 305px; /*temporary*/
   font-size: 15px;
@@ -11,13 +13,15 @@
 
 @media @tablet-widths {
   .contacts {
-    padding-top: 45px;
+    width: 768px;
+    padding-top: 82px;
     min-height: 280px; /*temporary*/
   }
 }
 
 @media @desktop-widths {
   .contacts {
+    width: 1150px;
     position: relative;
     display: flex;
     padding: 0 50px;
