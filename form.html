@@ -32,8 +32,8 @@
       </section>
       <form class="order-form" action="https://echo.htmlacademy.ru/">
         <p class="order-form_description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="order-form__field order-form__field--type">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--type">Тип</legend>
+        <div class="order-form__field order-form__field--type">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--type">Тип</h3>
           <div class="order-form__options order-form__options--type">
             <label class="order-form__label-radio">
               <input type="radio" name="type" value="interior">
@@ -46,9 +46,9 @@
               Детская игрушка
             </label>
           </div>
-        </fieldset>
-        <fieldset class="order-form__field order-form__field--color">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--color">Цвет</legend>
+        </div>
+        <div class="order-form__field order-form__field--color">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--color">Цвет</h3>
           <div class="order-form__options order-form__options--color">
             <label class="order-form__label-checkbox order-form__label-checkbox--color">
               <input type="checkbox" name="color" value="white">
@@ -81,30 +81,36 @@
               Оранжевый
             </label>
           </div>
-        </fieldset>
-        <fieldset class="order-form__field order-form__field--name">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--name">ФИО</legend>
+        </div>
+        <div class="order-form__field order-form__field--name">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--name">ФИО</h3>
           <div class="order-form__options order-form__options--name">
-            <span class="order-form__line-name">Имя:</span>
-            <input type="text" name="firstname" value="Введите ваше имя*">
-            <span class="order-form__line-name">Фамилия:</span>
-            <input type="text" name="lastname" value="Укажите фамилию*">
-            <span class="order-form__line-name">Отчество:</span>
-            <input type="text" name="middlename" value="Отчество, если желаете">
+            <div class="order-form__line">
+              <span class="order-form__line-name">Имя:</span>
+              <input type="text" name="firstname" value="Введите ваше имя*">
+            </div>
+            <div class="order-form__line">
+              <span class="order-form__line-name">Фамилия:</span>
+              <input type="text" name="lastname" value="Укажите фамилию*">
+            </div>
+            <div class="order-form__line">
+              <span class="order-form__line-name">Отчество:</span>
+              <input type="text" name="middlename" value="Отчество, если желаете">
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="order-form__field order-form__field--phone">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--phone">Тел</legend>
+        </div>
+        <div class="order-form__field order-form__field--phone">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--phone">Тел</h3>
           <input type="text" name="mobile" value="+7 xxx xx xx*">
-        </fieldset>
-        <fieldset class="order-form__field order-form__field--email">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--email">E-mail</legend>
+        </div>
+        <div class="order-form__field order-form__field--email">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--email">E-mail</h3>
           <input type="text" name="e-mail" value="Ваш Email*">
-        </fieldset>
-        <fieldset class="order-form__field order-form__field--additional">
-          <legend class="order-form__fieldset-name order-form__fieldset-name--additional">Доп</legend>
+        </div>
+        <div class="order-form__field order-form__field--additional">
+          <h3 class="order-form__fieldset-name order-form__fieldset-name--additional">Доп</h3>
           <input type="text" name="other" value="Опишите все ваши пожелания к заказу">
-        </fieldset>
+        </div>
         <div class="order-form__footer-wrapper">
           <small class="order-form__legend"><sup>*</sup>Поля обязательны для заполнения</small>
           <button class="btn  order-form__submit" type="submit">Отправить заказ</button>
