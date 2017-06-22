@@ -4,7 +4,6 @@
   padding: 0 30px;
   margin: 0 auto;
   margin-bottom: 53px;
-  outline: 1px solid green;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -22,7 +21,7 @@
 @media @desktop-widths {
   .advantages {
     width: 1150px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     padding: 0 225px;
     padding-top: 83px;
   }
@@ -64,8 +63,58 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 50px;
   margin-bottom: 33px;
+}
+
+.advantages__item::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 7px;
+  width: 33px;
+  height: 38px;
+  background: url('../img/icon-feature-1.svg') no-repeat;
+}
+
+.advantages__item--cash::before {
+  left: 1px;
+  width: 47px;
+  height: 27px;
+  background: url('../img/icon-feature-3.svg') no-repeat;
+}
+
+.advantages__item--heart::before {
+  left: 7px;
+  top: 1px;
+  width: 34px;
+  height: 27px;
+  background: url('../img/icon-feature-5.svg') no-repeat;
+}
+
+.advantages__item--ball::before {
+  left: 5px;
+  top: 1px;
+  width: 35px;
+  height: 34px;
+  background: url('../img/icon-feature-2.svg') no-repeat;
+}
+
+.advantages__item--rocket::before {
+  left: -5px;
+  top: 1px;
+  width: 55px;
+  height: 23px;
+  background: url('../img/icon-feature-4.svg') no-repeat;
+}
+
+.advantages__item--present::before {
+  left: 3px;
+  top: -1px;
+  width: 33px;
+  height: 32px;
+  background: url('../img/icon-feature-6.svg') no-repeat;
 }
 
 @media @tablet-widths {
@@ -75,6 +124,5 @@
     line-height: 22px;
     padding-top: 52px;
     margin-bottom: 59px;
-    outline: 1px solid red;
   }
 }

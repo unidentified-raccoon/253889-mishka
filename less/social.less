@@ -6,21 +6,42 @@
 
 @media @tablet-widths {
   .social {
-    flex-basis: 150px;
     padding: 0;
-    margin-right: 80px;
-  }
-}
-
-@media @desktop-widths {
-  .social {
-    margin-right: 270px;
+    padding-top: 7px;
+    margin: 0;
   }
 }
 
 .social__links {
     display: flex;
+    box-sizing: border-box;
+    padding: 0 59px;
+    margin: 0;
+    margin-bottom: 27px;
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    min-height: 29px; /*temporary*/
-    outline: 1px solid red;
+}
+
+@media @tablet-widths {
+  .social__links {
+    width: 142px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social-btn {
+  text-decoration: none;
+  font-size: 0;
+  height: 22px;
+  width: 22px;
+}
+
+.social-btn:hover path {
+  fill: #46c1ae;
+}
+
+.social-btn:active path {
+  opacity: 0.3;
 }

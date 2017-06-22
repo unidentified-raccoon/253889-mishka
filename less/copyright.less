@@ -1,21 +1,35 @@
 .copyright {
   padding: 0 30px;
-  padding-top: 12px;
+  padding-top: 7px;
   padding-bottom: 18px;
   background-color: @color-grey-light2;
-  outline: 1px solid red;
+  cursor: pointer;
+}
+
+.copyright:hover .copyright__link path {
+  fill: #46c1ae;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }
 
 @media @tablet-widths {
   .copyright {
-    display: inline-block;
-    text-align: top;
+    box-sizing: border-box;
     padding: 0;
+    padding-top: 8px;
   }
 }
 
 .copyright__title {
+  display: inline-block;
+  vertical-align: top;
+  padding:0;
+  padding-top: 5px;
   padding-left: 39px;
+  margin: 0;
+  margin-right: 23px;
   font-size: 19px;
   line-height: 18px;
 }
@@ -23,6 +37,23 @@
 @media @tablet-widths {
   .copyright__title {
     padding: 0;
-    padding-right: 58px;
+    padding-top: 4px;
+    margin-right: 23px;
   }
+}
+
+@media@desktop-widths {
+  .copyright--form-page {
+    padding-top: 2px;
+  }
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 34px;
+  margin: 0 1px;
+  text-decoration: none;
+  font-size: 0;
 }

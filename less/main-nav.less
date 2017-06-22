@@ -33,6 +33,7 @@
   width: 244px;
   text-decoration: none;
   color: @color-black;
+  border-top: 1px solid @color-grey-light;
 }
 
 @media @tablet-widths {
@@ -42,6 +43,7 @@
     padding-top: 16px;
     margin: 0;
     width: 167px;
+    border-top: none;
   }
   .main-nav__item--big {
     width: 233px;
@@ -56,6 +58,9 @@
   .main-nav__item--big {
     width: 215px;
     padding-left: 35px;
+  }
+  .main-nav__item--border-right {
+    border-right: 1px solid @color-grey-light;
   }
 }
 
@@ -87,27 +92,74 @@
 
 .main-nav__user-item {
   display: block;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 76px;
+  padding: 0 30px;
   padding-top: 27px;
-  padding-bottom: 28px;
-  width: 244px;
+  padding-bottom: 25px;
+  width: 320px;
   text-decoration: none;
   color: @color-black;
-  outline: 1px solid black;
+  border-top: 1px solid @color-grey-light;
+}
+
+.main-nav__user-item--bag {
+  border-bottom: 1px solid @color-grey-light;
+}
+
+.main-nav__user-item--bag svg {
+  margin-right: 23px;
+}
+
+.main-nav__user-item--search svg {
+  margin-right: 28px;
+}
+
+.main-nav__user-item:hover,
+.main-nav__item:hover,
+.main-nav__desktop-item:hover {
+  color: @color-black-06;
+}
+
+.main-nav__user-item:hover .main-nav__user-item-svg {
+  fill: #63d1bb;
+}
+
+.main-nav__user-item:active,
+.main-nav__item:active,
+.main-nav__desktop-item:active {
+  color: @color-black-03;
+}
+
+.main-nav__user-item:active .main-nav__user-item-svg {
+  fill: #d0f1ea;
 }
 
 @media @tablet-widths {
-  .main-nav__user-item {
+  .main-nav__user-item--bag {
     box-sizing: border-box;
-    padding: 32px 0;
-    padding-left: 82px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+    padding-right: 0;
+    padding-left: 32px;
     margin: 0;
-    width: 265px;
+    width: 266px;
+    border: none;
+    border-left: 1px solid @color-grey-light;
   }
-  .main-nav__user-item--textzero {
-    font-size: 0;
+  .main-nav__user-item--bag svg {
+    margin-right: 29px;
+  }
+  .main-nav__user-item--search {
     width: 84px;
+    padding: 0;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-bottom: 25px;;
+    margin: 0;
+    font-size: 0;
+    border: none;
+    border-left: 1px solid @color-grey-light;
   }
 }
 

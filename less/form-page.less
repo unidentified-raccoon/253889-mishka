@@ -19,16 +19,38 @@
 
 @media @tablet-widths {
   .form-page__hero {
+    z-index: -1;
+    position: relative;
     margin-top: -40px;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
     padding-top: 93px;
     padding-bottom: 80px;
+  }
+  .form-page__hero::after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 768px;
+    height: 24px;
+    margin-left: -384px;
+    background: url('../img/bg-zigzag-fill.svg') no-repeat;
+    background-size: 768px auto;
   }
 }
 
 @media @desktop-widths {
   .form-page__hero {
-    margin-bottom: 146px;
+    padding-bottom: 100px;
+    margin-bottom: 125px;
+  }
+  .form-page__hero::after {
+    bottom: -18px;
+    width: 1150px;
+    height: 34px;
+    margin-left: -575px;
+    background: url('../img/bg-zigzag-fill.svg') repeat;
+    background-size: 1150px auto;
   }
 }
 
