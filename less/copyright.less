@@ -1,9 +1,12 @@
 .copyright {
-  padding: 0 30px;
-  padding-top: 7px;
-  padding-bottom: 18px;
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 20px;
   background-color: @color-grey-light2;
   cursor: pointer;
+  border-top: 1px solid @color-grey-light;
 }
 
 .copyright:hover .copyright__link path {
@@ -16,9 +19,11 @@
 
 @media @tablet-widths {
   .copyright {
-    box-sizing: border-box;
+    width: auto;
+    margin: 0;
     padding: 0;
     padding-top: 8px;
+    border: none;
   }
 }
 
