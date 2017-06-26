@@ -1,0 +1,116 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: fixed;
+  box-sizing: border-box;
+  top: 120px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 44px;
+  color: @color-black;
+  background-color: @color-white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content__close {
+  position: absolute;
+  top: -34px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content__close::before,
+.modal-content__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: @color-black;
+  border-radius: 1px;
+}
+
+.modal-content__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content__title {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-content__options-name {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @color-grey;
+}
+
+.modal-content__options {
+  display: flex;
+  margin-bottom: 29px;
+  flex-direction: row;
+  width: 260px;
+  justify-content: space-between;
+}
+
+.modal-content__option {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: @color-grey;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal-content__option:hover {
+  border: 2px solid @color-black-03;
+}
+
+.modal-content__option:hover {
+  border: 2px solid @color-aquamarine-medium;
+}
+
+.modal-content input[type=submit] {
+  padding: 20px 32px;
+  margin: 0;
+  border: none;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: @color-white;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: @color-aquamarine-medium;
+  text-transform: uppercase;
+}
